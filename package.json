@@ -4,8 +4,10 @@
   "description": "Library for utils",
   "main": "src/index.js",
   "scripts": {
-    "lint": "eslint **/*.js",
-    "lint:fix": "eslint **/*.js --fix"
+    "prebuild": " rimraf dist",
+    "build": "rollup -c",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,9 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.0.1",
     "husky": "^3.0.5",
-    "lint-staged": "^9.4.0"
+    "lint-staged": "^9.4.0",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.21.4",
+    "rollup-plugin-node-resolve": "^5.2.0"
   }
 }

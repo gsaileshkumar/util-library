@@ -4,7 +4,8 @@
   "description": "Library for utils",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint **/*.js",
+    "lint:fix": "eslint **/*.js --fix"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/gsaileshkumar/util-library/issues"
   },
-  "homepage": "https://github.com/gsaileshkumar/util-library#readme"
+  "homepage": "https://github.com/gsaileshkumar/util-library#readme",
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1"
+  }
 }
